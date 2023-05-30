@@ -1,38 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .App {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 50px;
+}
+.App > ul {
+  display: flex;
+  gap: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.github div {
+  display: flex;
+  align-items: center;
+}
+.github div input {
+  padding: 2px 5px;
+  border: 2px solid #333;
+  outline: 0;
+  margin-left: 5px;
+}
+.github div button {
+  padding: 2px 5px;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.github {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
+}
+.github ul li {
+  list-style-type: decimal;
+}
+
+.counter > div > button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.counter > div {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
 }
